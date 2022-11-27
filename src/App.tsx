@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { MainApp } from './09-useContext/MainApp'
+
 // import { FocusScreen } from './04-useRef/FocusScreen'
 // import { CallbackHook } from './06-memo/CallbackHook'
 // import { MemoHook } from './06-memo/MemoHook'
@@ -11,15 +14,14 @@ import { useState } from 'react'
 // import SimpleForm from './02-useEffect/SimpleForm'
 //import SimpleFormCustomHook from './02-useEffect/SimpleFormCustomHook'
 //import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks'
-
-import { TodoApp } from './08-useReducer/TodoApp';
+//import { TodoApp } from './08-useReducer/TodoApp';
 
 function App() {
 
   return (
-    <div className="App">
-      <TodoApp></TodoApp>
-    </div>
+    <BrowserRouter>
+      <MainApp></MainApp>
+    </BrowserRouter>
   )
 }
 
