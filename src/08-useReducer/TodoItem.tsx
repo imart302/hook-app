@@ -18,10 +18,11 @@ export const TodoItem = (props: ITodoItemProps) => {
     <>
       <li key={props.id} className="list-group-item d-flex justify-content-between">
         <span
+          data-testid='span-id'
           className={`align-self-center ${props.done && 'text-decoration-line-through'}`}
           onClick={() => {props.onToggleTodo?.(props.id)}}
         >{props.description}</span>
-        <button className="btn btn-danger" onClick={handleDelete}>Borrar</button>
+        <button data-testid='button-delete-id' className="btn btn-danger" onClick={handleDelete}>Borrar</button>
       </li>
     </>
   );

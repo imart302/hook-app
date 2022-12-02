@@ -10,7 +10,7 @@ export interface IUseCounterProps {
   max: number;
 }
 
-export default function useCounter(
+export function useCounter(
   props: IUseCounterProps = {
     initial: 1,
     min: 1,

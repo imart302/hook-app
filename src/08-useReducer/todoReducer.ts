@@ -1,5 +1,5 @@
 export interface ITodoActionReducer {
-  type: '[TODO] Add Todo' | '[TODO] Remove' | '[TODO] Toggle';
+  type: '[TODO] Add Todo' | '[TODO] Remove' | '[TODO] Toggle' | "";
   payload: any;
 }
 

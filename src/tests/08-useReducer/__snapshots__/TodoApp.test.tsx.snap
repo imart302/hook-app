@@ -1,0 +1,99 @@
+// Vitest Snapshot v1
+
+exports[`Test on Todo App > Should match snapshot 1`] = `
+<div>
+  <h1
+    data-testid="heding-count-id"
+  >
+    TodoApp: 
+    <span
+      data-testid="total-count-id"
+    >
+      2
+    </span>
+    , 
+    <small>
+      pendientes: 
+      <span
+        data-testid="pending-id"
+      >
+        2
+      </span>
+       
+    </small>
+     
+  </h1>
+  <hr />
+  <div
+    class="row"
+  >
+    <div
+      class="col-7"
+    >
+      <div>
+        TodoListMock
+      </div>
+    </div>
+    <div
+      class="col-5"
+    >
+      <h4>
+        Agregar TODO
+      </h4>
+      <hr />
+      <div>
+        TodoAddMock
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test on Todo App > Should render with components 1`] = `
+<div>
+  <h1
+    data-testid="heding-count-id"
+  >
+    TodoApp: 
+    <span
+      data-testid="total-count-id"
+    >
+      2
+    </span>
+    , 
+    <small>
+      pendientes: 
+      <span
+        data-testid="pending-id"
+      >
+        2
+      </span>
+       
+    </small>
+     
+  </h1>
+  <hr />
+  <div
+    class="row"
+  >
+    <div
+      class="col-7"
+    >
+      <div>
+        TodoListMock
+      </div>
+    </div>
+    <div
+      class="col-5"
+    >
+      <h4>
+        Agregar TODO
+      </h4>
+      <hr />
+      <div>
+        TodoAddMock
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { UserContext } from './context/userContext'
+import { UserContext } from './context/UserContext'
 
 export const HomePage = () => {
 
@@ -8,7 +8,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <h1>Home Page  {userContext.user?.name ? <small>{userContext.user?.name}</small>: ''}</h1>
+      <h1 data-testid="h1-home-id">Home Page{userContext.user?.name ? <small data-testid="name-id">{' '+userContext.user?.name}</small>: ''}</h1>
       <hr></hr>
     </>
   )

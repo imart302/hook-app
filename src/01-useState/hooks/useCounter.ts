@@ -7,11 +7,11 @@ export const useCounter = (initial: number) => {
 
 
   const increment = () => {
-    setCount(count+1);
+    setCount((current) => current + 1);
   }
 
   const decrement = () => {
-    setCount(count-1);
+    setCount((current) => current - 1);
   }
 
   const reset = () => {

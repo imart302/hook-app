@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { UserContext } from './context/userContext'
+import { UserContext } from './context/UserContext'
 
 export const LoginPage = () => {
 
@@ -10,6 +10,9 @@ export const LoginPage = () => {
       <h1>Login Page</h1>
       <hr></hr>
 
+      <pre data-testid = 'user-test-id'>
+        {JSON.stringify(userContext.user, null, 3)}
+      </pre>
       <button className='btn btn-primary' onClick={() => {
         userContext.setUser?.({
           name: 'Ivan',

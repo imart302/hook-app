@@ -19,8 +19,8 @@ export const useForm = (props: IUseFormProps) => {
   const onInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     const {name, value} = event.target;
 
-    setState({
-      fields: state.fields.map((field) => {
+    setState( (current) => ({
+      fields: current.fields.map((field) => {
         if (field.name === name) {
           return {
             ...field,
@@ -30,9 +30,7 @@ export const useForm = (props: IUseFormProps) => {
           return field;
         }
       }),
-    });
-
-    console.log(state);
+    }));
   };
 
   return {

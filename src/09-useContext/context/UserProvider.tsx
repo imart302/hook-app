@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { IUser, UserContext } from "./userContext"
+import { IUser, UserContext } from "./UserContext"
 
 
 export const UserProvider = ({children}: {children: React.ReactElement[]}) => {

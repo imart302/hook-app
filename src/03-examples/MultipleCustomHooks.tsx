@@ -1,6 +1,6 @@
 import React, { MouseEventHandler, useEffect } from 'react'
 import ErrorQuote from './ErrorQuote';
-import useCounter from './hooks/useCounter';
+import { useCounter } from './hooks/useCounter';
 import { useFetchQuote } from './hooks/useFetchQuote'
 import LoadingQuotes from './LoadingQuotes';
 import { Quote } from './Quote';
